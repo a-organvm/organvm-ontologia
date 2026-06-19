@@ -1,7 +1,7 @@
 """Tests for entity resolution — lookup by UID, name, slug, alias."""
 
-from ontologia.entity.identity import EntityIdentity, EntityType, LifecycleStatus
-from ontologia.entity.naming import NameIndex, NameRecord, _slugify, add_name
+from ontologia.entity.identity import EntityIdentity, EntityType
+from ontologia.entity.naming import NameIndex, NameRecord, add_name
 from ontologia.entity.resolver import EntityResolver
 
 

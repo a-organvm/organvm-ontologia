@@ -4,10 +4,8 @@ from __future__ import annotations
 
 import json
 
-import pytest
-
 from ontologia.registry.store import RegistryStore, open_store
-from ontologia.structure.edges import EdgeIndex, HierarchyEdge, RelationEdge
+from ontologia.structure.edges import EdgeIndex
 
 
 class TestEdgesPath:
@@ -106,7 +104,7 @@ class TestLoadEdges:
         store.edges_path.write_text(
             '{"edge_type":"hierarchy","parent_id":"p1","child_id":"c1","valid_from":"2020-01-01T00:00:00+00:00"}\n'
             'not-json\n'
-            '{"edge_type":"relation","source_id":"s1","target_id":"t1","relation_type":"depends_on","valid_from":"2020-01-01T00:00:00+00:00"}\n'
+            '{"edge_type":"relation","source_id":"s1","target_id":"t1","relation_type":"depends_on","valid_from":"2020-01-01T00:00:00+00:00"}\n',
         )
         store2 = RegistryStore(store_dir=store.store_dir)
         store2.load()

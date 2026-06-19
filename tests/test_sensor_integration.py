@@ -10,12 +10,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-import pytest
-
 from ontologia.events import bus
 from ontologia.sensing.interfaces import NormalizedChange, RawSignal
 from ontologia.sensing.scanner import scan_all, scan_and_emit
-
 
 # ---------------------------------------------------------------------------
 # Helpers

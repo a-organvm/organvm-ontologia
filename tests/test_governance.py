@@ -1,6 +1,5 @@
 """Tests for the governance layer: policies, revision, signatures."""
 
-import pytest
 
 from ontologia.governance.policies import (
     EvolutionPolicy,
@@ -19,8 +18,7 @@ from ontologia.governance.signatures import (
     compute_structural_signature,
     signatures_differ,
 )
-from ontologia.structure.edges import EdgeIndex, HierarchyEdge, RelationEdge
-
+from ontologia.structure.edges import EdgeIndex, HierarchyEdge
 
 # ---------------------------------------------------------------------------
 # Policies

@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from resolve import _parse_yaml, load_law, resolve
+from resolve import load_law, resolve
 
 LAW_PATH = Path(__file__).parent.parent / "routing-law.yaml"
 

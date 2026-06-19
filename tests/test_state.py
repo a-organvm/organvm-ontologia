@@ -9,12 +9,10 @@ from ontologia.entity.identity import (
     EntityIdentity,
     EntityType,
     LifecycleStatus,
-    create_entity,
 )
-from ontologia.entity.naming import NameIndex, add_name
-from ontologia.events import bus
-from ontologia.state.recovery import RecoveredState, recover_from_events, verify_recovery
-from ontologia.state.runtime import RuntimeState, compute_runtime
+from ontologia.entity.naming import NameIndex
+from ontologia.state.recovery import recover_from_events, verify_recovery
+from ontologia.state.runtime import compute_runtime
 from ontologia.state.snapshot import (
     StateSnapshot,
     compare_snapshots,
@@ -32,7 +30,6 @@ from ontologia.state.temporal import (
     structural_diff,
 )
 from ontologia.structure.edges import EdgeIndex, HierarchyEdge, RelationEdge
-
 
 # ---------------------------------------------------------------------------
 # Snapshot
