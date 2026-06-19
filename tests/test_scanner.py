@@ -2,8 +2,6 @@
 
 from __future__ import annotations
 
-import pytest
-
 from ontologia.sensing.interfaces import RawSignal
 from ontologia.sensing.scanner import scan_all, scan_and_emit
 

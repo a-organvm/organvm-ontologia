@@ -5,7 +5,6 @@ from pathlib import Path
 from ontologia.entity.identity import EntityIdentity, EntityType, LifecycleStatus, create_entity
 from ontologia.entity.lineage import LineageIndex, LineageType
 from ontologia.entity.naming import NameIndex, add_name
-from ontologia.events import bus
 from ontologia.events.mutations import (
     MutationContext,
     deprecate,

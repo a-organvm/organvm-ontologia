@@ -9,9 +9,8 @@ from ontologia.metrics.metric import (
     create_metric,
 )
 from ontologia.metrics.observations import Observation, ObservationStore
-from ontologia.metrics.rollups import RollupResult, rollup_for_entity, rollup_tree
+from ontologia.metrics.rollups import rollup_for_entity, rollup_tree
 from ontologia.structure.edges import EdgeIndex, HierarchyEdge
-
 
 # ── Metric definitions ──────────────────────────────────────────────
 

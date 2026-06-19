@@ -1,9 +1,8 @@
 """Tests for the dynamic variable engine."""
 
-import os
 
 from ontologia.variables.inheritance import collect_overrides, find_in_chain, scope_chain
-from ontologia.variables.resolution import ResolvedVariable, VariableStore
+from ontologia.variables.resolution import VariableStore
 from ontologia.variables.variable import (
     Constraint,
     Mutability,
@@ -11,7 +10,6 @@ from ontologia.variables.variable import (
     Variable,
     VariableType,
 )
-
 
 # ── Variable model ──────────────────────────────────────────────────
 

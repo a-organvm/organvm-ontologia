@@ -11,7 +11,6 @@ from ontologia.entity.identity import EntityType, LifecycleStatus
 from ontologia.entity.lineage import LineageType
 from ontologia.metrics.metric import AggregationPolicy, MetricDefinition, MetricType
 from ontologia.registry.mutations import (
-    MutationResult,
     merge_entities,
     reclassify_entity,
     relocate_entity,
@@ -19,7 +18,6 @@ from ontologia.registry.mutations import (
 )
 from ontologia.registry.store import RegistryStore, open_store
 from ontologia.variables.variable import Constraint, Mutability, Scope, Variable, VariableType
-
 
 # ---------------------------------------------------------------------------
 # Variable persistence

@@ -1,6 +1,5 @@
 """Tests for the inference layer: engine, clusters, propagation, tension."""
 
-import pytest
 
 from ontologia.entity.identity import EntityIdentity, EntityType, LifecycleStatus
 from ontologia.entity.naming import NameIndex, add_name
@@ -11,21 +10,18 @@ from ontologia.inference.clusters import (
 )
 from ontologia.inference.engine import InferenceResult, InferenceType
 from ontologia.inference.propagation import (
-    PropagationPath,
     full_blast_radius,
     propagate_downward,
     propagate_lateral,
     propagate_upward,
 )
 from ontologia.inference.tension import (
-    TensionIndicator,
     TensionType,
     detect_naming_conflicts,
     detect_orphans,
     detect_overcoupling,
 )
 from ontologia.structure.edges import EdgeIndex, HierarchyEdge, RelationEdge
-
 
 # ---------------------------------------------------------------------------
 # Shared fixtures

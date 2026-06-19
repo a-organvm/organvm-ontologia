@@ -1,20 +1,18 @@
 """Tests for the sensing layer: interfaces, detection, normalization."""
 
-import pytest
 
+from ontologia.sensing.detection import (
+    detect_anomaly,
+    detect_relation_changes,
+    detect_state_changes,
+)
 from ontologia.sensing.interfaces import (
     ChangeType,
     NormalizedChange,
     RawSignal,
     Sensor,
 )
-from ontologia.sensing.detection import (
-    detect_anomaly,
-    detect_relation_changes,
-    detect_state_changes,
-)
 from ontologia.sensing.normalization import normalize_batch, normalize_signal
-
 
 # ---------------------------------------------------------------------------
 # Interfaces

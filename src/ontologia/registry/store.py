@@ -528,7 +528,6 @@ class RegistryStore:
         default: Any = None,
     ) -> Any:
         """Resolve a variable through the inheritance chain. Returns the value."""
-        from ontologia.variables.resolution import ResolvedVariable
 
         result = self._variable_store.resolve(key, scope, entity_chain, default)
         return result.value
